@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+body {
+    color: #fff;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #CFD8DC;
+    background-repeat: no-repeat
+}
+
+.card {
+    background-image: url("");
+    background-size: cover;
+    width: 600px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 4px #9E9E9E;
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+
+.time-font {
+    font-size: 50px
+}
+
+.sm-font {
+    font-size: 18px
+}
+
+.med-font {
+    font-size: 28px
+}
+
+.large-font {
+    font-size: 60px
+}
+
+</style>
+</head>
+<body>
+<div class="container-fluid px-1 px-md-4 py-5 mx-auto">
+    <div class="row d-flex justify-content-center px-3">
+        <div class="card" style="background-image: url('https://i.imgur.com/dpqZJV5.jpg');">
+           <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit" class="form-control btn btn-primary submit px-3">Submit</button>
+      </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
